@@ -1,0 +1,83 @@
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    row-gap: 10em;
+    text-align: center;
+    margin-top: 3%;
+    background-color: rgb(185, 153, 153);
+}
+
+/*        BOTONES DE ARRIBA      */
+
+/*        1 SECCION QUIENES SOMOS      */
+.QuinesSomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;/* Dos columnas iguales */
+    align-items: center;
+    height: 100vh;
+    padding: 0 5%;
+}
+
+.QuinesSomos p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    width: 90%;
+}
+.texto p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    width: 90%;
+}
+.QuienesSomos img {
+    width: 100%;/* La imagen ocupa toda la columna derecha */
+}
+
+.QuinesSomos h2 {
+    color: #e62429;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.imagenPrincipal img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*  2 SECCION SUPERHEROES  */
+
+
+
+.SuperHeroe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    height: 100vh;
+    padding: 0 5%;
+}
+
+.SuperHeroe h2 {
+    display: grid;
+    text-align: left;
+    color: #e62429;
+    font-size: 3em;
+    margin-bottom: 10px;
+
+}
+
+.textoHeroe p{
+    font-size: 1.2em;
+    line-height: 1.5;
+    width: 90%;
+}
+
+.SuperHeroe img {
+    width: 100%;
+}
+
+.imagenHeroe img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
