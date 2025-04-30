@@ -4,91 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArchivoSuperheroes</title>
-    <!-- <link rel="stylesheet" href="main.css"> -->
-     
+    <title>Archivo de Superheroes</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <header>
-        <section>
-            <div class="navbar">
-                <div>
-                    <a href="#">Quienes Somos?</a>
-                </div>
-
-                <div>
-                    <a href="#">SuperHeroes</a>
-                </div>
-
-                <div>
-                    <a href="#">Villanos</a>
-                </div>
-
-                <div>
-                    <a href="#">Redes</a>
-                </div>
-            </div>
-        </section>
+        <nav class="navbar">
+            <a href="#quienes-somos">¿QUIENES SOMOS?</a>
+            <a href="#superheroes">SUPERHÉROES</a>
+            <a href="#villanos">VILLANOS</a>
+            <a href="#redes">REDES</a>
+        </nav>
     </header>
+
     <main>
-        <section>
-            <div class="QuinesSomos">
+        <!-- Sección Quienes Somos -->
+        <section id="quienes-somos" class="section-quienes-somos">
+            <div class="content">
                 <div class="texto">
                     <h2>Quienes Somos</h2>
                     <p>Bienvenido a Archivo de Superhéroes, el lugar donde los héroes cobran vida. Nuestra misión es
-                        crear
-                        un espacio donde los fanáticos del cómic y el cine puedan descubrir, aprender y compartir
-                        información sobre sus personajes favoritos.
-                        Nos apasionan las historias de valentía, justicia y aventura, por eso hemos reunido un archivo
-                        con
-                        perfiles detallados de superhéroes y villanos de diferentes universos. Ya seas fan de Marvel,
-                        DC, o
-                        héroes independientes, aquí encontrarás un rincón especial para explorar sus historias, poderes
-                        y
-                        curiosidades.
-                    </p>
+                        crear un espacio donde los fanáticos del cómic y el cine puedan descubrir, aprender y compartir
+                        información sobre sus personajes favoritos.</p>
+                    <p>Nos apasionan las historias de valentía, justicia y aventura, por eso hemos reunido un archivo
+                        con perfiles detallados de superhéroes y villanos de diferentes universos. Ya seas fan de
+                        Marvel, DC, o héroes independientes, aquí encontrarás un rincón especial para explorar sus
+                        historias, poderes y curiosidades.</p>
                 </div>
-                <div class="imagenPrincipal">
-                    <img src="Spiderman.jpg" alt="imagen Principal">
+                <div class="imagen-heroe">
                 </div>
             </div>
         </section>
-        <section>
-            <div class="SuperHeroe">
-                <div class="imagenHeroe">
-                    <img src="SuperHeroe.jpg" alt="imagen del Super Heroe">
-                </div>
 
-                <div class="textoHeroe">
-                    <h2>SUPER HEROES</h2>
-                    <p>En esta sección, encontrarás a los héroes más emblemáticos del universo de los cómics y el cine.
-                        Conoce sus orígenes, sus poderes, sus aliados y las batallas que los han convertido en leyendas.
-                        ¡Explora y descubre quién es tu héroe favorito!
-                    </p>
+        <!-- seccion categorias pagina principal-->
+        <section class="categories-section">
+            <!-- categoria de super heroes-->
+            <div class="category-card">
+                <h2 class="category-title">SUPERHÉROES</h2>
+                <div class="category-content">
+                    <div class="category-image superhero-collage">
+                    </div>
+                    <div class="category-text">
+                        <p>En esta sección, encontrarás a los héroes más emblemáticos del universo de los cómics y el
+                            cine.
+                            Conoce sus orígenes, sus poderes, sus aliados y las batallas que los han convertido en
+                            leyendas.
+                            ¡Explora y descubre quién es tu héroe favorito!
+                        </p>
+                        <a href="#superheroes" class="read-more-btn">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- categoria Villanos-->
+            <div class="category-card">
+                <h2 class="category-title"> VILLANOS</h2>
+                <div class="category-content">
+                    <div class="category-text">
+                        <p>En esta sección exploraremos a los villanos más icónicos del universo de los cómics y el
+                            cine. Descubre sus orígenes, sus habilidades, sus rivalidades con los héroes y lo que los
+                            hace tan inolvidables. ¿Quién es tu villano favorito?
+                        </p>
+                        <a href="#villanos" class="read-more-btn">READ MORE</a>
+                    </div>
+                    <div class="category-image symbiote-image">
+                        <!-- aca va la imagen  del symbiote-->
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="Villanos">
-                <div class="imagenvillanos">
-                    <img src="Villano.jpg" alt="imagen del Villano">
+
+        <!-- Sección Superhéroes Detallada -->
+        <section id="superheroes" class="section-superheroes">
+            <h2>SUPERHÉROES</h2>
+            <div class="comic-grid">
+                <!-- Aquí van los paneles de cómic mostrados en la imagen 2 -->
+                <div class="comic-panel panel-1"><span>POW!</span></div>
+                <div class="comic-panel panel-2"><span>CRASH!</span></div>
+                <div class="comic-panel panel-3"><span>BOO!</span></div>
+                <div class="comic-panel panel-4"><span>BOOM!!!</span></div>
+                <div class="comic-panel panel-5"><span>CRASH!</span></div>
+                <div class="comic-panel panel-6"><span>SMASH!</span></div>
+                <div class="comic-panel panel-7"><span>BOOM!</span></div>
+                <div class="comic-panel panel-8"><span>CRASH!</span></div>
+                <div class="comic-panel panel-9"><span>BOOM!</span></div>
+            </div>
+            <a href="#" class="back-button">VOLVER A LA PÁGINA PRINCIPAL</a>
+        </section>
+
+        <!-- Sección Villanos Detallada -->
+        <section id="villanos" class="section-villanos">
+            <h2>VILLANOS</h2>
+            <div class="comic-grid">
+                <!-- Mismos paneles de cómic pero en la sección de villanos como se ve en la imagen 3 -->
+                <div class="comic-panel panel-1"><span>POW!</span></div>
+                <div class="comic-panel panel-2"><span>CRASH!</span></div>
+                <div class="comic-panel panel-3"><span>BOO!</span></div>
+                <div class="comic-panel panel-4"><span>BOOM!!!</span></div>
+                <div class="comic-panel panel-5"><span>CRASH!</span></div>
+                <div class="comic-panel panel-6"><span>SMASH!</span></div>
+                <div class="comic-panel panel-7"><span>BOOM!</span></div>
+                <div class="comic-panel panel-8"><span>BOOM!</span></div>
+                <div class="comic-panel panel-9"><span>BOOM!</span></div>
+            </div>
+            <a href="#" class="back-button">VOLVER A LA PÁGINA PRINCIPAL</a>
+        </section>
+
+        <!-- Sección Redes -->
+        <section id="redes" class="section-redes">
+            <div class="redes-content">
+                <h3>¿Listo para unirte al equipo de héroes? Síguenos y mantente al tanto de todas las novedades del
+                    multiverso.</h3>
+
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#" class="social-icon"><img src="github-icon.png" alt="GitHub"></a>
+                    <a href="#" class="social-icon"><img src="linkedin-icon.png" alt="LinkedIn"></a>
                 </div>
 
-                <div class="textoVillano">
-                    <h2>VILLANOS</h2>
-                    <p>En esta sección exploraremos a los villanos más icónicos del universo de los cómics y el cine.
-                        Descubre sus orígenes, sus habilidades, sus rivalidades con los héroes y lo que los hace tan
-                        inolvidables. ¿Quién es tu villano favorito?
-                    </p>
+                <div class="contact-info">
+                    <a href="mailto:juan7leon4@gmail.com" class="email">juan7leon4@gmail.com</a>
+                    <a href="tel:+573138050461" class="phone">+57 3138050461</a>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer">
-            <p>&copy; 2025 Archivo SuperHeroes. Todos los derechos reservados.</p>
-        </div>
+        <p>&copy; 2025 Archivo SuperHeroes. Todos los derechos reservados.</p>
     </footer>
 </body>
 

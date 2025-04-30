@@ -1,83 +1,315 @@
+/*estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a{ 
+    text-decoration: none;
+    color: #fff;
+}
+
 .navbar {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2em;
-    row-gap: 10em;
-    text-align: center;
-    margin-top: 3%;
-    background-color: rgb(185, 153, 153);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover{
+    color: #e62429;
 }
 
 /*        BOTONES DE ARRIBA      */
 
 /*        1 SECCION QUIENES SOMOS      */
-.QuinesSomos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;/* Dos columnas iguales */
-    align-items: center;
-    height: 100vh;
-    padding: 0 5%;
+.section-quienes-somos{
+    padding: 80px 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.QuinesSomos p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    width: 90%;
-}
-.texto p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    width: 90%;
-}
-.QuienesSomos img {
-    width: 100%;/* La imagen ocupa toda la columna derecha */
-}
-
-.QuinesSomos h2 {
-    color: #e62429;
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-.imagenPrincipal img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/*  2 SECCION SUPERHEROES  */
-
-
-
-.SuperHeroe {
+.section-quienes-somos .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: start;
-    height: 100vh;
-    padding: 0 5%;
+    gap: 40px;
+    align-items: center;
 }
 
-.SuperHeroe h2 {
-    display: grid;
-    text-align: left;
+.section-quienes-somos h2{
     color: #e62429;
-    font-size: 3em;
-    margin-bottom: 10px;
-
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
 }
 
-.textoHeroe p{
-    font-size: 1.2em;
-    line-height: 1.5;
-    width: 90%;
+.section-quienes-somos .texto{
+    max-width: 600px;
 }
 
-.SuperHeroe img {
+.section-quienes-somos p{
+    margin-bottom: 15px;
+}
+
+.imagen-heroe{
     width: 100%;
+    height: 400px;
+    background-image: url('spidermanFoto1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
 }
 
-.imagenHeroe img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+/* seccion de categorias pagina principal*/
+.categories-section{
+    padding: 50px;
+}
+
+.category-card{
+    margin-bottom: 100px;
+}
+
+.category-title{
+    color: #e62429;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
+.category-content{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.category-image{
+    flex: 1;
+    min-height: 300px;
+    border-radius: 8px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.superhero-collage{
+    background-image: url('superhero-collage.jpg');
+}
+
+.symbiote-image {
+    background-image: url('symbiote.jpg');
+    /* Imagen de Symbiote */
+}
+
+.category-text{
+    flex: 1;
+}
+
+.category-text p{
+    margin-bottom: 20px;
+}
+
+.read-more-btn{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.read-more-btn:hover{
+    background-color: #e62429;
+}
+
+.section-superheroes,
+.section-villanos {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.section-superheroes h2,
+.section-villanos h2 {
+    color: #e62429;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
+.comic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.comic-panel {
+    background-color: #fff;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('comic-texture.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.comic-panel span {
+    font-family: 'Bangers', cursive;
+    font-size: 2em;
+    color: #000;
+    transform: rotate(-5deg);
+}
+
+.panel-1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    height: 315px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e62429;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #cf0e15;
+} 
+
+/* seccion  redes*/
+.section-redes {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.redes-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #e62429;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info a:hover {
+    color: #e62429;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    font-size: 0.8em;
+    color: #999;
+}
+
+/*RESPONSIVIDAD PAPAAAA*/
+
+@media (max-width: 768px) {
+    .section-quienes-somos .content {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-content {
+        flex-direction: column;
+    }
+    
+    .comic-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .panel-1 {
+        grid-column: 1;
+        grid-row: 1;
+        height: 150px;
+    }
+    
+    .social-icons {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .comic-grid {
+        grid-template-columns: 1fr;
+    }
 }
